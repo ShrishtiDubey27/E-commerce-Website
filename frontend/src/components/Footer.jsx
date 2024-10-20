@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <img src={assets.logo} className='mb-5 w-32' alt="" />
           <p className='w-full md:w-2/3 text-gray-600'> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorem ducimus officia veritatis aliquid excepturi numquam vero inventore fuga, voluptatem maxime maiores reprehenderit sint quo?
+          Thank you for visiting our store. Stay connected with us for the latest updates, exclusive offers, and exciting new arrivals. Have questions? Feel free to reach out to our support team. We're here to help!
           </p>
         </div>
 
