@@ -1,6 +1,6 @@
 import validator from "validator";
 import bcrypt from "bcrypt";
-import UserModel from "../models/userModel";
+import UserModel from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 
 const createToken = (id) => {
@@ -47,7 +47,10 @@ const registerUser = async (req, res) => {
     const user = await newUser.save();
     const token = createToken(user._id);
     res.json({ success: true, token });
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
 };
 
 const adminLogin = async (req, res) => {};

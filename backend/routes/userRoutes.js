@@ -3,7 +3,7 @@ import {
   loginUser,
   registerUser,
   adminLogin,
-} from "../controllers/userController";
+} from "../controllers/userController.js";
 
 const userRouter = express.Router();
 
