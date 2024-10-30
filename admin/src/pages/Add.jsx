@@ -36,7 +36,6 @@ const Add = ({ token }) => {
       if (image3) formData.append("image3", image3);
       if (image4) formData.append("image4", image4);
 
-      console.log("Bestseller status on submit:", bestseller); // For debugging
 
       const response = await axios.post(`${backendUrl}/api/product/add`, formData, {
         headers: { token }
