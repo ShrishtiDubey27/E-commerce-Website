@@ -68,7 +68,7 @@ loadOrderData()
                     <p className='min-w-2 h-2 rounded-full bg-green-500'></p>
                     <p className='text-sm md:text-base'>{item.status}</p>
                 </div>
-                <button onClick={loadOrderData} className='border px4 py-2 text-sm font-medium rounded-sm'>Track Order</button>
+                <button onClick={loadOrderData} className='border px-4 py-2 text-sm font-medium rounded-sm'>Track Order</button>
              </div>
            </div>
           ))
