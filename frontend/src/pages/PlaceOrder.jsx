@@ -4,6 +4,8 @@ import CartTotal from '../components/CartTotal';
 import { assets } from '../assets/frontend_assets/assets';
 import { ShopContext } from '../context/ShopContext';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const PlaceOrder = () => {
   const [method, setMethod] = useState('cod');
@@ -51,6 +53,7 @@ const PlaceOrder = () => {
  }
     switch(method)
     {
+//-------------------COD MODE ----------------------------------
       case 'cod':
      const response=await axios.post(backendUrl+'/api/order/place',orderData,{headers:{token}});
 
@@ -65,6 +68,18 @@ const PlaceOrder = () => {
       toast.error(response.data.message)
      }
       break;
+// --------------------------------------------------------------------
+// -------------------STRIPE MODE CASE----------------------------
+case 'stripe':
+  const responseStripe = await axios.post(backendUrl + '/api/order/stripe', orderData, { headers: { token } });
+  if (responseStripe.data.success) {
+    const { session_url } = responseStripe.data;
+    window.location.replace(session_url);
+  } else {
+    toast.error(responseStripe.data.message);
+  }
+  break;
+
 
       default:
         break;
