@@ -13,6 +13,7 @@ const Home = () => {
       <BestSeller></BestSeller>
       <OurPolicy></OurPolicy>
       <NewsletterBox></NewsletterBox>
+      
     </div>
   )
 }

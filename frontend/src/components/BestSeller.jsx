@@ -29,6 +29,7 @@ const BestSeller = () => {
           ))
         }
       </div>
+      
     </div>
   );
 };
