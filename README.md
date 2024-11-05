@@ -2,6 +2,13 @@
 
 ShopAura is a comprehensive e-commerce website that provides users with a seamless online shopping experience. Built with modern technologies, it features a dynamic frontend, robust backend, secure authentication, and scalable database management.
 
+## Live Preview
+
+You can view the live previews of both the frontend and the admin panel:
+
+- **Frontend Preview:** [Link to Frontend](https://shopaurafrontend.vercel.app/)
+- **Admin Panel Preview:** [Link to Admin Panel](https://shopauraadminpanel.vercel.app/)
+
 ## Tech Stack
 ### Frontend
 - **React.js**
