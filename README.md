@@ -1,6 +1,6 @@
 # ShopAura
 
-ShopAura is a comprehensive e-commerce website that provides users with a seamless online shopping experience. Built with modern technologies, it features a dynamic frontend, robust backend, secure authentication, and scalable database management.
+ShopAura is a comprehensive full-stack e-commerce website that provides users with a seamless online shopping experience. Built with modern technologies, it features a dynamic frontend, robust backend, secure authentication,payment integration and scalable database management.
 
 ## Live Preview
 
